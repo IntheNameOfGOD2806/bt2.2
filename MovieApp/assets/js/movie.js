@@ -30,7 +30,7 @@ let showMovie = (data, page ,itemsPerPage) => {
 
   let HTML = ``;
   listMovie.forEach((value, index) => {
-    // Tạo HTML cho từng phần tử trong trang
+
     HTML = HTML + `
     <div class="col-md-3 col-sm-6 col-12">
     <div class="box-movie">
@@ -61,9 +61,9 @@ let showMovie = (data, page ,itemsPerPage) => {
   HTML = HTML + `</ul>
   </nav>`
 
-  rowMovie.innerHTML = HTML; // Hiển thị dữ liệu của trang hiện tại
+  rowMovie.innerHTML = HTML; 
 
-  // Thêm logic phân trang vào đây nếu cần
+
 };
 
 
