@@ -1,0 +1,129 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header./start */
+.header-main {
+  height: 80px;
+  background-color: #373b69;
+}
+.wrap-header {
+  display: flex;
+}
+.logo-site {
+  width: 20%;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  height: 80px;
+  line-height: 80px;
+}
+
+.menu {
+  width: 50%;
+}
+.menu ul {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.menu ul li {
+  margin: 0 18px;
+  list-style: none;
+}
+.menu ul li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.menu ul li:hover a {
+  text-decoration: underline;
+}
+.wrap-form {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrap-form .form-search input {
+  height: 44px;
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid #22254b;
+  background-color: transparent;
+  padding: 10px;
+  color: #fff;
+}
+.wrap-form .form-search input:focus {
+  background-color: #22254b;
+}
+
+/* Main-content./Start */
+.main-content {
+  width: 100%;
+  /* height: 800px; */
+  background-color: #22254b;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.box-movie {
+  width: 100%;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.box-movie img {
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+}
+.movie-content {
+  background-color: #373b69;
+  padding: 20px;
+}
+.movie-content .movie-info {
+  display: flex;
+  justify-content: space-between;
+}
+.movie-title {
+  font-size: 20px;
+  color: #fff;
+}
+.movie-start {
+  padding: 5px 10px;
+  background-color: #22254b;
+  border-radius: 3px;
+  color: green;
+}
+.movie-overview {
+  background-color: #fff;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  transition: bottom .5s;
+}
+.movie-overview h3 {
+  color: #000;
+}
+
+.box-movie:hover .movie-overview {
+  bottom: 0;
+  transition: bottom .5s;
+}
+.box-movie .green {
+  color: green;
+}
+.box-movie .organe {
+  color: orange;
+}
+.box-movie .red {
+  color: red;
+}
